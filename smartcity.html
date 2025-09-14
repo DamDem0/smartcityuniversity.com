@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smartcity University</title>
+  <meta name="description" content="Smartcity University portal">
+  <style>
+    :root{
+      --brand:#0b5cff;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+
+    /* Container */
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+
+    /* Header */
+    header{background:linear-gradient(90deg, rgba(11,92,255,0.95), rgba(6,182,212,0.95));color:#fff;padding:18px 0;border-radius:0 0 24px 24px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:52px;height:52px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--brand);font-weight:700}
+    nav{margin-left:auto}
+    .navlinks{display:flex;gap:18px;align-items:center}
+    a.nav{color:#e6eefc;text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:flex;gap:28px;align-items:center;padding:34px 0}
+    .hero-left{flex:1}
+    .hero h1{font-size:2.1rem;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;background:#fff;color:var(--brand);padding:10px 18px;border-radius:10px;font-weight:700;text-decoration:none}
+    .hero-right{flex:1}
+    .hero-card{background:var(--card);padding:18px;border-radius:16px;box-shadow:0 6px 18px rgba(2,6,23,0.08)}
+
+    /* Sections */
+    section{margin:28px 0}
+    .grid{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 16px rgba(2,6,23,0.06)}
+    .dept{display:flex;flex-direction:column;gap:12px}
+    .dept h3{margin:0}
+    .small{font-size:0.95rem;color:var(--muted)}
+
+    /* Events */
+    .events{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px}
+    .event{min-width:220px}
+
+    /* Footer */
+    footer{padding:26px 0;color:var(--muted)}
+    .footer-grid{display:flex;gap:24px;flex-wrap:wrap}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .hero{flex-direction:column}
+      nav{display:none}
+    }
+    @media (max-width:560px){
+      .grid-3{grid-template-columns:1fr}
+    }
+
+    /* tiny form styles */
+    form input, form textarea, form select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefc;font-size:0.95rem}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">Smartcity</div>
+        <div>
+          <div style="font-weight:800">Smartcity University</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.9)">Innovate • Educate • Transform</div>
+        </div>
+      </div>
+      <nav>
+        <div class="navlinks">
+          <a class="nav" href="#about">About</a>
+          <a class="nav" href="#departments">Departments</a>
+          <a class="nav" href="#admissions">Admissions</a>
+          <a class="nav" href="#events">Events</a>
+          <a class="nav" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+  <h1>Welcome to Smartcity University</h1>
+  <p class="small">A higher-education institution committed to foster a community of scholars, innovators and practitioners who collaborate to advance knowledge, develop solutions, and shape the future of smart cities worldwide. Explore programs, apply for admission, and join our vibrant campus life.</p>
+        <p>
+          <a class="cta" href="#admissions">Apply Now</a>
+          <a class="cta" style="margin-left:12px;background:transparent;border:2px solid #fff;color:#fff;text-decoration:none">Visit Campus</a>
+        </p>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <h3 style="margin-top:0">Quick facts</h3>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <div class="card" style="flex:1;min-width:140px">Students<br><strong></strong></div>
+            <div class="card" style="flex:1;min-width:140px">Programs<br><strong>3</strong></div>
+            
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h2>About Smartcity University</h2>
+        <p class="muted"> Founded Sept 8 2025, Smartcity University provides world-class teaching and research in language skills, mobility opportunities, international experience and expanded professional network. Our graduates go on to lead in industry, government and not-for-profit sectors.</p>
+      </div>
+    </section>
+
+    <section id="departments">
+      <h2>programs & courses</h2>
+      <div class="grid grid-3">
+        <div class="card dept">
+          <h3>Dual Degree MBA</h3>
+    
+        </div>
+        <div class="card dept">
+          <h3>Digital Business & Innovation</h3>
+        
+        </div>
+        <div class="card dept">
+          <h3>Master of Arts(MA) in Leadership and Business Development</h3>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="admissions">
+      <h2>Admissions</h2>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:18px">
+        <div class="card">
+          <h3>Undergraduate & Postgraduate</h3>
+          <p class="muted">Apply online for degree programs. Entry requirements vary by program — check each department for specific qualifications.</p>
+          <ul class="small">
+            <li>Undergraduate: WAEC/NECO/IB or equivalent</li>
+            <li>Postgraduate: First degree with minimum 2:2 or equivalent</li>
+            <li>International students: IELTS/TOEFL where applicable</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quick apply</h3>
+          <form onsubmit="event.preventDefault(); alert('Application submitted (demo)')">
+            <label class="small">Full name</label>
+            <input type="text" placeholder="Your full name" required>
+            <label class="small" style="margin-top:8px">Email</label>
+            <input type="email" placeholder="you@example.com" required>
+            <label class="small" style="margin-top:8px">Program</label>
+            <select required>
+              <option>Dual Degree MBA</option>
+              <option>Digital Business & Innovation</option>
+              <option>Master of Arts(MA) in leadership and Business Development</option>
+            </select>
+            <div style="margin-top:10px"><button type="submit" style="padding:10px 12px;border-radius:8px;border:none;background:var(--brand);color:#fff;font-weight:700">Submit</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Location</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+        <div class="card">
+          <h3>General enquiries</h3>
+          <p class="small">Email: Smartcityelegantglobalventures@gmail.com • Phone: 08135381901, 08024575070</p>
+          <p class="small">Address: Segun Oni's former SDP Governorship campaign office, opposite AB foundation civil center, Adebayo,Iworoko Rd, Ado Ekiti, Ekiti state, Nigeria.</p>
+        </div>
+        <div class="card">
+          <h3>Send a message</h3>
+          <form onsubmit="event.preventDefault(); alert('Message sent (demo)')">
+            <input placeholder="Your name" required>
+            <input placeholder="Email" required style="margin-top:8px">
+            <textarea rows="3" placeholder="Message" style="margin-top:8px" required></textarea>
+            <div style="margin-top:8px"><button type="submit" style="padding:10px 12px;border-radius:8px;border:none;background:var(--brand);color:#fff;font-weight:700">Send</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap">
+        <div class="muted">© Smartcity University — All rights reserved</div>
+        <div class="muted">Follow: Twitter • Facebook • Instagram</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small helper: smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id = a.getAttribute('href');
+        if(id.length>1){
+          e.preventDefault();
+          document.querySelector(id).scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    });
+  </script>
+</body>
+</html>

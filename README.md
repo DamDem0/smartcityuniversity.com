@@ -1,1 +1,1 @@
-# smartcityuniversity.com
+# smartcityuniversity.site
